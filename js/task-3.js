@@ -2,8 +2,7 @@ function filterArray(numbers, value) {
     let total = [0];
     for (let i = 0; i < numbers.length; i += 1) {
         if (numbers[i] > value) {
-            total = total.concat(i)
-            return total
+            return total.push(numbers[i]);
         }
     }
 }
